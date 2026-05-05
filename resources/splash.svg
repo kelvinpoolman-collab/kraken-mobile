@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2732 2732">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#020617"/>
+    </radialGradient>
+    <linearGradient id="cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22d3ee"/>
+      <stop offset="100%" style="stop-color:#0891b2"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="50"/>
+    </filter>
+  </defs>
+  
+  <rect width="2732" height="2732" fill="url(#bg)"/>
+  
+  <!-- Grid -->
+  <g opacity="0.05" stroke="#22d3ee" stroke-width="2">
+    <line x1="0" y1="683" x2="2732" y2="683"/>
+    <line x1="0" y1="1366" x2="2732" y2="1366"/>
+    <line x1="0" y1="2049" x2="2732" y2="2049"/>
+    <line x1="683" y1="0" x2="683" y2="2732"/>
+    <line x1="1366" y1="0" x2="1366" y2="2732"/>
+    <line x1="2049" y1="0" x2="2049" y2="2732"/>
+  </g>
+  
+  <!-- Glow halo -->
+  <circle cx="1366" cy="1300" r="600" fill="url(#cyan)" opacity="0.2" filter="url(#glow)"/>
+  
+  <!-- Diamond -->
+  <g transform="translate(1366, 1300)">
+    <path d="M 0,-300 L 300,0 L 0,300 L -300,0 Z" 
+          fill="url(#cyan)" 
+          stroke="#22d3ee" 
+          stroke-width="8"/>
+    <path d="M 0,-240 L 90,-150 L 0,-75 L -90,-150 Z" fill="#67e8f9" opacity="0.7"/>
+    <circle cx="0" cy="0" r="30" fill="#020617" opacity="0.4"/>
+    <circle cx="0" cy="0" r="22" fill="#22d3ee"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="1366" y="1820" 
+        font-family="system-ui, sans-serif" 
+        font-size="100" 
+        font-weight="800" 
+        fill="#f8fafc" 
+        text-anchor="middle"
+        letter-spacing="6">KRAKEN TERMINAL</text>
+  
+  <!-- Subtitle -->
+  <text x="1366" y="1900" 
+        font-family="system-ui, sans-serif" 
+        font-size="40" 
+        font-weight="500" 
+        fill="#22d3ee" 
+        text-anchor="middle"
+        letter-spacing="12">v5.9 · MOBILE</text>
+</svg>
