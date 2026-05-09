@@ -442,14 +442,17 @@ body {
 /* MOBILE OPTIMIZATIONS */
 @media (max-width: 768px) {
   body { font-size: 14px; }
-  .tb { padding: 12px 16px; flex-wrap: wrap; gap: 8px; }
-  .tb-logo { font-size: 14px; }
-  .tb-status { font-size: 11px; }
-  .tb-actions { gap: 6px; }
-  .tb-actions .btn { padding: 6px 10px; font-size: 11px; }
+  .tb { padding: 0 12px; height: 40px; flex-wrap: nowrap; gap: 8px; }
+  .tb-logo { font-size: 13px; }
+  .tb-status { font-size: 9px; margin-left: 8px; letter-spacing: 0.5px; }
   
-  .nav { padding: 0 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-  .nav-item { padding: 12px 14px; font-size: 11px; white-space: nowrap; }
+  .topnav { padding: 0 8px; overflow-x: auto; -webkit-overflow-scrolling: touch; flex-wrap: nowrap; }
+  .tabs { display: flex; flex-wrap: nowrap; min-width: max-content; }
+  .tab { padding: 12px 10px; font-size: 10px; letter-spacing: 0.5px; white-space: nowrap; }
+  /* Hide nav-actions (Sync/Config/Noodstop) op mobile - veroorzaakt overflow */
+  .nav-actions { display: none !important; }
+  /* Hide window controls (min/max/close) en theme toggle op mobile */
+  .tb-actions { display: none !important; }
   
   .main { padding: 12px; gap: 12px; grid-template-columns: 1fr; }
   .stats { grid-template-columns: 1fr 1fr; gap: 0; }
