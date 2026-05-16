@@ -3,7 +3,7 @@
   "appName": "Kraken Terminal",
   "webDir": "src",
   "server": {
-    "androidScheme": "https",
+    "androidScheme": "http",
     "cleartext": true
   },
   "android": {
