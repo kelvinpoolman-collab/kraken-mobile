@@ -941,7 +941,7 @@ document.querySelectorAll('.sortable').forEach(el => {
 // MOBILE: Configurable API URL via localStorage
 // Default: Tailscale IP van PC (werkt overal). Override mogelijk via popup-knop.
 const SAVED_API = localStorage.getItem('apiUrl');
-const API = SAVED_API || 'http://100.97.253.77:5000';
+const API = SAVED_API || '';
 const IS_MOBILE = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth < 768;
 
 // Mobile API setup helper
